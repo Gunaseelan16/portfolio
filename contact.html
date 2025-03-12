@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                <span>Gunaseelan K</span>
+            </div>   
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index1.html">Home</a></div>    
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="about.html">About</a></div> 
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="skill.html">Skill</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="service.html">Services</a></div>  
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="contact.html">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+    
+        <!-- Dropdown Menu -->
+        <div class="dropdown">
+            <div class="links">
+                <a href="index1.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skill.html">Skill</a>
+                <a href="service.html">Services</a> 
+                <a href="contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i> 
+            </div>
+        </div>
+    </nav>
+
+  
+<section class="contact" id="contact">
+    <div class="content">
+        <div class="title" data-aos="fade-up" data-aos-duration="1500">
+            <span>Contact Me</span>
+        </div>
+        <form class="contact-form" action="https://formsubmit.co/gunaseelanrk25@email.com" method="POST" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
+            <!-- Name Field -->
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <!-- Phone Field -->
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <!-- Email Field -->
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <!-- Message Field -->
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" placeholder="Type your message here" rows="5" required></textarea>
+
+           
+
+            <!-- Submit Button -->
+            <div class="submit-button">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</section>
+    
+<footer>
+    <div class="text">
+         <span>Created By
+            <a href="#" Gunaseelan K ></a>| &#169; All Rights Reserved
+         </span>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({offset:0});
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
