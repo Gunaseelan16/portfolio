@@ -38,69 +38,430 @@
         </div>
     </nav>
 
-    <section class="Skills" id="Skills">
-        <div class="content">
-            <div class="title" data-aos="fade-up" data-aos-duration="1200"><span>My Skills</span></div>
-        <div class="skills-details">
-            <div class="text">
-                <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">Website Developer</div>
-                <p data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">As a passionate website developer,I specialize in creating visually appealing and highly functional websites.with expertise in HTML,CSS,JavaScript and modern frameworks.Whether working on frond-end design or back-end functionality, I strive to deliver websites that not only look great but also perform flawlessly..</p>
-            <div class="experience" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
-                <div class="num">Fresher</div>
-                <div class="exp">
-                    My First Steps in Web Development<br/>
+    <section class="skills-section bg-gradient-to-br from-[#b74b4b] to-[#9a3a3a] text-white py-12 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 w-full" id="Skills">
+        <div class="mx-auto w-full max-w-6xl flex flex-col items-center">
+            <!-- Centered Title with Gradient Animation -->
+            <div class="w-full text-center mb-8 sm:mb-10 md:mb-12" data-aos="fade-up">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-3 sm:mb-4">
+                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-white to-[#f8d7d7] animate-gradient bg-300%">
+                        My Skills
+                    </span>
+                </h2>
+                <div class="w-20 sm:w-24 h-1 bg-gradient-to-r from-transparent via-white to-transparent mx-auto rounded-full animate-width"></div>
+            </div>
+    
+            <!-- Content Box -->
+            <div class="w-full max-w-2xl bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 p-5 sm:p-6 md:p-8 mb-10 sm:mb-12 mx-auto text-center 
+                        transition-all duration-500 hover:scale-[1.02] hover:bg-white/15 hover:shadow-xl" 
+                 data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4">Website Developer</h3>
+                <p class="text-base sm:text-lg md:text-xl leading-relaxed mb-4 sm:mb-6">
+                    As a passionate website developer, I specialize in creating visually appealing and highly functional websites.
+                </p>
+                <div class="inline-block bg-[#ffd700]/20 border border-[#ffd700]/40 px-4 sm:px-6 py-2 sm:py-3 rounded-full 
+                            transition-all duration-300 hover:bg-[#ffd700]/30 hover:border-[#ffd700]/60">
+                    <span class="text-[#ffd700] font-bold text-lg sm:text-xl">Fresher</span>
+                    <span class="ml-1 sm:ml-2 text-sm sm:text-base">My First Steps in Web Development</span>
                 </div>
             </div>
+    
+            <!-- Skills Slider Container -->
+            <div class="w-full relative overflow-hidden py-4" data-aos="fade-up" data-aos-delay="200">
+                <!-- Gradient Fades - Responsive Sizes -->
+                <div class="absolute inset-y-0 left-0 w-10 sm:w-16 bg-gradient-to-r from-[#b74b4b] to-transparent z-10"></div>
+                <div class="absolute inset-y-0 right-0 w-10 sm:w-16 bg-gradient-to-l from-[#b74b4b] to-transparent z-10"></div>
+                
+                <!-- Slider Track - Duplicated for seamless looping -->
+                <div class="flex animate-infinite-scroll space-x-4 sm:space-x-6 md:space-x-8 w-max">
+                    <!-- First Set -->
+                    <!-- HTML -->
+                    <div class="skill-card flex-shrink-0 w-32 sm:w-36 md:w-40 h-44 sm:h-48 md:h-52 group relative">
+                        <div class="h-full bg-white rounded-xl shadow-lg p-4 sm:p-5 flex flex-col items-center justify-between 
+                                    transition-all duration-300 hover:bg-[#f8f8f8] hover:scale-105 hover:shadow-xl cursor-pointer overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-br from-[#b74b4b]/0 to-[#9a3a3a]/0 group-hover:from-[#b74b4b]/10 group-hover:to-[#9a3a3a]/10 transition-all duration-500"></div>
+                            <div class="relative z-10 w-full flex flex-col items-center">
+                                <div class="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 bg-[#b74b4b]/10 rounded-full flex items-center justify-center mb-3 sm:mb-4 group-hover:bg-[#b74b4b]/20 transition-all">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" 
+                                         class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 group-hover:scale-110 transition-transform">
+                                </div>
+                                <h4 class="font-bold text-lg sm:text-xl md:text-2xl text-gray-800 group-hover:text-[#b74b4b] transition-colors">HTML</h4>
+                                <p class="text-xs sm:text-sm text-gray-600 mt-1">Markup Language</p>
+                            </div>
+                            <div class="relative z-10 w-full mt-3 sm:mt-4 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                                <div class="w-full bg-gray-200 rounded-full h-1.5">
+                                    <div class="bg-[#b74b4b] h-1.5 rounded-full" style="width: 95%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- CSS -->
+                    <div class="skill-card flex-shrink-0 w-32 sm:w-36 md:w-40 h-44 sm:h-48 md:h-52 group relative">
+                        <div class="h-full bg-white rounded-xl shadow-lg p-4 sm:p-5 flex flex-col items-center justify-between 
+                                    transition-all duration-300 hover:bg-[#f8f8f8] hover:scale-105 hover:shadow-xl cursor-pointer overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-br from-[#b74b4b]/0 to-[#9a3a3a]/0 group-hover:from-[#b74b4b]/10 group-hover:to-[#9a3a3a]/10 transition-all duration-500"></div>
+                            <div class="relative z-10 w-full flex flex-col items-center">
+                                <div class="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 bg-[#b74b4b]/10 rounded-full flex items-center justify-center mb-3 sm:mb-4 group-hover:bg-[#b74b4b]/20 transition-all">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" 
+                                         class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 group-hover:scale-110 transition-transform">
+                                </div>
+                                <h4 class="font-bold text-lg sm:text-xl md:text-2xl text-gray-800 group-hover:text-[#b74b4b] transition-colors">CSS</h4>
+                                <p class="text-xs sm:text-sm text-gray-600 mt-1">Styling Language</p>
+                            </div>
+                            <div class="relative z-10 w-full mt-3 sm:mt-4 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                                <div class="w-full bg-gray-200 rounded-full h-1.5">
+                                    <div class="bg-[#b74b4b] h-1.5 rounded-full" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- JavaScript -->
+                    <div class="skill-card flex-shrink-0 w-32 sm:w-36 md:w-40 h-44 sm:h-48 md:h-52 group relative">
+                        <div class="h-full bg-white rounded-xl shadow-lg p-4 sm:p-5 flex flex-col items-center justify-between 
+                                    transition-all duration-300 hover:bg-[#f8f8f8] hover:scale-105 hover:shadow-xl cursor-pointer overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-br from-[#b74b4b]/0 to-[#9a3a3a]/0 group-hover:from-[#b74b4b]/10 group-hover:to-[#9a3a3a]/10 transition-all duration-500"></div>
+                            <div class="relative z-10 w-full flex flex-col items-center">
+                                <div class="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 bg-[#b74b4b]/10 rounded-full flex items-center justify-center mb-3 sm:mb-4 group-hover:bg-[#b74b4b]/20 transition-all">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" 
+                                         class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 group-hover:scale-110 transition-transform">
+                                </div>
+                                <h4 class="font-bold text-lg sm:text-xl md:text-2xl text-gray-800 group-hover:text-[#b74b4b] transition-colors">JavaScript</h4>
+                                <p class="text-xs sm:text-sm text-gray-600 mt-1">Programming</p>
+                            </div>
+                            <div class="relative z-10 w-full mt-3 sm:mt-4 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                                <div class="w-full bg-gray-200 rounded-full h-1.5">
+                                    <div class="bg-[#b74b4b] h-1.5 rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- React -->
+                    <div class="skill-card flex-shrink-0 w-32 sm:w-36 md:w-40 h-44 sm:h-48 md:h-52 group relative">
+                        <div class="h-full bg-white rounded-xl shadow-lg p-4 sm:p-5 flex flex-col items-center justify-between 
+                                    transition-all duration-300 hover:bg-[#f8f8f8] hover:scale-105 hover:shadow-xl cursor-pointer overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-br from-[#b74b4b]/0 to-[#9a3a3a]/0 group-hover:from-[#b74b4b]/10 group-hover:to-[#9a3a3a]/10 transition-all duration-500"></div>
+                            <div class="relative z-10 w-full flex flex-col items-center">
+                                <div class="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 bg-[#b74b4b]/10 rounded-full flex items-center justify-center mb-3 sm:mb-4 group-hover:bg-[#b74b4b]/20 transition-all">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" 
+                                         class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 group-hover:scale-110 transition-transform">
+                                </div>
+                                <h4 class="font-bold text-lg sm:text-xl md:text-2xl text-gray-800 group-hover:text-[#b74b4b] transition-colors">React</h4>
+                                <p class="text-xs sm:text-sm text-gray-600 mt-1">Library</p>
+                            </div>
+                            <div class="relative z-10 w-full mt-3 sm:mt-4 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                                <div class="w-full bg-gray-200 rounded-full h-1.5">
+                                    <div class="bg-[#b74b4b] h-1.5 rounded-full" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tailwind -->
+                    <div class="skill-card flex-shrink-0 w-32 sm:w-36 md:w-40 h-44 sm:h-48 md:h-52 group relative">
+                        <div class="h-full bg-white rounded-xl shadow-lg p-4 sm:p-5 flex flex-col items-center justify-between 
+                                    transition-all duration-300 hover:bg-[#f8f8f8] hover:scale-105 hover:shadow-xl cursor-pointer overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-br from-[#b74b4b]/0 to-[#9a3a3a]/0 group-hover:from-[#b74b4b]/10 group-hover:to-[#9a3a3a]/10 transition-all duration-500"></div>
+                            <div class="relative z-10 w-full flex flex-col items-center">
+                                <div class="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 bg-[#b74b4b]/10 rounded-full flex items-center justify-center mb-3 sm:mb-4 group-hover:bg-[#b74b4b]/20 transition-all">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="Tailwind" 
+                                         class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 group-hover:scale-110 transition-transform">
+                                </div>
+                                <h4 class="font-bold text-lg sm:text-xl md:text-2xl text-gray-800 group-hover:text-[#b74b4b] transition-colors">Tailwind</h4>
+                                <p class="text-xs sm:text-sm text-gray-600 mt-1">CSS Framework</p>
+                            </div>
+                            <div class="relative z-10 w-full mt-3 sm:mt-4 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                                <div class="w-full bg-gray-200 rounded-full h-1.5">
+                                    <div class="bg-[#b74b4b] h-1.5 rounded-full" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Bootstrap -->
+                    <div class="skill-card flex-shrink-0 w-32 sm:w-36 md:w-40 h-44 sm:h-48 md:h-52 group relative">
+                        <div class="h-full bg-white rounded-xl shadow-lg p-4 sm:p-5 flex flex-col items-center justify-between 
+                                    transition-all duration-300 hover:bg-[#f8f8f8] hover:scale-105 hover:shadow-xl cursor-pointer overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-br from-[#b74b4b]/0 to-[#9a3a3a]/0 group-hover:from-[#b74b4b]/10 group-hover:to-[#9a3a3a]/10 transition-all duration-500"></div>
+                            <div class="relative z-10 w-full flex flex-col items-center">
+                                <div class="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 bg-[#b74b4b]/10 rounded-full flex items-center justify-center mb-3 sm:mb-4 group-hover:bg-[#b74b4b]/20 transition-all">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" 
+                                         class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 group-hover:scale-110 transition-transform">
+                                </div>
+                                <h4 class="font-bold text-lg sm:text-xl md:text-2xl text-gray-800 group-hover:text-[#b74b4b] transition-colors">Bootstrap</h4>
+                                <p class="text-xs sm:text-sm text-gray-600 mt-1">CSS Framework</p>
+                            </div>
+                            <div class="relative z-10 w-full mt-3 sm:mt-4 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                                <div class="w-full bg-gray-200 rounded-full h-1.5">
+                                    <div class="bg-[#b74b4b] h-1.5 rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- MongoDB -->
+                    <div class="skill-card flex-shrink-0 w-32 sm:w-36 md:w-40 h-44 sm:h-48 md:h-52 group relative">
+                        <div class="h-full bg-white rounded-xl shadow-lg p-4 sm:p-5 flex flex-col items-center justify-between 
+                                    transition-all duration-300 hover:bg-[#f8f8f8] hover:scale-105 hover:shadow-xl cursor-pointer overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-br from-[#b74b4b]/0 to-[#9a3a3a]/0 group-hover:from-[#b74b4b]/10 group-hover:to-[#9a3a3a]/10 transition-all duration-500"></div>
+                            <div class="relative z-10 w-full flex flex-col items-center">
+                                <div class="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 bg-[#b74b4b]/10 rounded-full flex items-center justify-center mb-3 sm:mb-4 group-hover:bg-[#b74b4b]/20 transition-all">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" 
+                                         class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 group-hover:scale-110 transition-transform">
+                                </div>
+                                <h4 class="font-bold text-lg sm:text-xl md:text-2xl text-gray-800 group-hover:text-[#b74b4b] transition-colors">MongoDB</h4>
+                                <p class="text-xs sm:text-sm text-gray-600 mt-1">Database</p>
+                            </div>
+                            <div class="relative z-10 w-full mt-3 sm:mt-4 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                                <div class="w-full bg-gray-200 rounded-full h-1.5">
+                                    <div class="bg-[#b74b4b] h-1.5 rounded-full" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Express -->
+                    <div class="skill-card flex-shrink-0 w-32 sm:w-36 md:w-40 h-44 sm:h-48 md:h-52 group relative">
+                        <div class="h-full bg-white rounded-xl shadow-lg p-4 sm:p-5 flex flex-col items-center justify-between 
+                                    transition-all duration-300 hover:bg-[#f8f8f8] hover:scale-105 hover:shadow-xl cursor-pointer overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-br from-[#b74b4b]/0 to-[#9a3a3a]/0 group-hover:from-[#b74b4b]/10 group-hover:to-[#9a3a3a]/10 transition-all duration-500"></div>
+                            <div class="relative z-10 w-full flex flex-col items-center">
+                                <div class="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 bg-[#b74b4b]/10 rounded-full flex items-center justify-center mb-3 sm:mb-4 group-hover:bg-[#b74b4b]/20 transition-all">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" 
+                                         class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-white p-1 rounded group-hover:scale-110 transition-transform">
+                                </div>
+                                <h4 class="font-bold text-lg sm:text-xl md:text-2xl text-gray-800 group-hover:text-[#b74b4b] transition-colors">Express</h4>
+                                <p class="text-xs sm:text-sm text-gray-600 mt-1">Backend</p>
+                            </div>
+                            <div class="relative z-10 w-full mt-3 sm:mt-4 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                                <div class="w-full bg-gray-200 rounded-full h-1.5">
+                                    <div class="bg-[#b74b4b] h-1.5 rounded-full" style="width: 70%"></div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Node.js -->
+                    <div class="skill-card flex-shrink-0 w-32 sm:w-36 md:w-40 h-44 sm:h-48 md:h-52 group relative">
+                        <div class="h-full bg-white rounded-xl shadow-lg p-4 sm:p-5 flex flex-col items-center justify-between 
+                                    transition-all duration-300 hover:bg-[#f8f8f8] hover:scale-105 hover:shadow-xl cursor-pointer overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-br from-[#b74b4b]/0 to-[#9a3a3a]/0 group-hover:from-[#b74b4b]/10 group-hover:to-[#9a3a3a]/10 transition-all duration-500"></div>
+                            <div class="relative z-10 w-full flex flex-col items-center">
+                                <div class="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 bg-[#b74b4b]/10 rounded-full flex items-center justify-center mb-3 sm:mb-4 group-hover:bg-[#b74b4b]/20 transition-all">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" 
+                                         class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 group-hover:scale-110 transition-transform">
+                                </div>
+                                <h4 class="font-bold text-lg sm:text-xl md:text-2xl text-gray-800 group-hover:text-[#b74b4b] transition-colors">Node.js</h4>
+                                <p class="text-xs sm:text-sm text-gray-600 mt-1">Runtime</p>
+                            </div>
+                            <div class="relative z-10 w-full mt-3 sm:mt-4 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                                <div class="w-full bg-gray-200 rounded-full h-1.5">
+                                    <div class="bg-[#b74b4b] h-1.5 rounded-full" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- MERN Stack -->
+                    <div class="skill-card flex-shrink-0 w-32 sm:w-36 md:w-40 h-44 sm:h-48 md:h-52 group relative">
+                        <div class="h-full bg-white rounded-xl shadow-lg p-4 sm:p-5 flex flex-col items-center justify-between 
+                                    transition-all duration-300 hover:bg-[#f8f8f8] hover:scale-105 hover:shadow-xl cursor-pointer overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-br from-[#b74b4b]/0 to-[#9a3a3a]/0 group-hover:from-[#b74b4b]/10 group-hover:to-[#9a3a3a]/10 transition-all duration-500"></div>
+                            <div class="relative z-10 w-full flex flex-col items-center">
+                                <div class="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 bg-[#b74b4b]/10 rounded-full flex items-center justify-center mb-3 sm:mb-4 group-hover:bg-[#b74b4b]/20 transition-all">
+                                    <div class="relative w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" 
+                                             class="absolute top-0 left-0 w-6 h-6 sm:w-7 sm:h-7 group-hover:scale-110 transition-transform">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" 
+                                             class="absolute top-0 right-0 w-6 h-6 sm:w-7 sm:h-7 bg-white p-0.5 rounded group-hover:scale-110 transition-transform">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" 
+                                             class="absolute bottom-0 left-0 w-6 h-6 sm:w-7 sm:h-7 group-hover:scale-110 transition-transform">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" 
+                                             class="absolute bottom-0 right-0 w-6 h-6 sm:w-7 sm:h-7 group-hover:scale-110 transition-transform">
+                                    </div>
+                                </div>
+                                <h4 class="font-bold text-lg sm:text-xl md:text-2xl text-gray-800 group-hover:text-[#b74b4b] transition-colors">MERN Stack</h4>
+                                <p class="text-xs sm:text-sm text-gray-600 mt-1">Full Stack</p>
+                            </div>
+                            <div class="relative z-10 w-full mt-3 sm:mt-4 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                                <div class="w-full bg-gray-200 rounded-full h-1.5">
+                                    <div class="bg-[#b74b4b] h-1.5 rounded-full" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Second Set (Duplicated for seamless looping) -->
+                    <!-- HTML -->
+                    <div class="skill-card flex-shrink-0 w-32 sm:w-36 md:w-40 h-44 sm:h-48 md:h-52 group relative">
+                        <div class="h-full bg-white rounded-xl shadow-lg p-4 sm:p-5 flex flex-col items-center justify-between 
+                                    transition-all duration-300 hover:bg-[#f8f8f8] hover:scale-105 hover:shadow-xl cursor-pointer overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-br from-[#b74b4b]/0 to-[#9a3a3a]/0 group-hover:from-[#b74b4b]/10 group-hover:to-[#9a3a3a]/10 transition-all duration-500"></div>
+                            <div class="relative z-10 w-full flex flex-col items-center">
+                                <div class="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 bg-[#b74b4b]/10 rounded-full flex items-center justify-center mb-3 sm:mb-4 group-hover:bg-[#b74b4b]/20 transition-all">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" 
+                                         class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 group-hover:scale-110 transition-transform">
+                                </div>
+                                <h4 class="font-bold text-lg sm:text-xl md:text-2xl text-gray-800 group-hover:text-[#b74b4b] transition-colors">HTML</h4>
+                                <p class="text-xs sm:text-sm text-gray-600 mt-1">Markup Language</p>
+                            </div>
+                            <div class="relative z-10 w-full mt-3 sm:mt-4 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                                <div class="w-full bg-gray-200 rounded-full h-1.5">
+                                    <div class="bg-[#b74b4b] h-1.5 rounded-full" style="width: 95%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- CSS -->
+                    <div class="skill-card flex-shrink-0 w-32 sm:w-36 md:w-40 h-44 sm:h-48 md:h-52 group relative">
+                        <div class="h-full bg-white rounded-xl shadow-lg p-4 sm:p-5 flex flex-col items-center justify-between 
+                                    transition-all duration-300 hover:bg-[#f8f8f8] hover:scale-105 hover:shadow-xl cursor-pointer overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-br from-[#b74b4b]/0 to-[#9a3a3a]/0 group-hover:from-[#b74b4b]/10 group-hover:to-[#9a3a3a]/10 transition-all duration-500"></div>
+                            <div class="relative z-10 w-full flex flex-col items-center">
+                                <div class="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 bg-[#b74b4b]/10 rounded-full flex items-center justify-center mb-3 sm:mb-4 group-hover:bg-[#b74b4b]/20 transition-all">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" 
+                                         class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 group-hover:scale-110 transition-transform">
+                                </div>
+                                <h4 class="font-bold text-lg sm:text-xl md:text-2xl text-gray-800 group-hover:text-[#b74b4b] transition-colors">CSS</h4>
+                                <p class="text-xs sm:text-sm text-gray-600 mt-1">Styling Language</p>
+                            </div>
+                            <div class="relative z-10 w-full mt-3 sm:mt-4 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                                <div class="w-full bg-gray-200 rounded-full h-1.5">
+                                    <div class="bg-[#b74b4b] h-1.5 rounded-full" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- JavaScript -->
+                    <div class="skill-card flex-shrink-0 w-32 sm:w-36 md:w-40 h-44 sm:h-48 md:h-52 group relative">
+                        <div class="h-full bg-white rounded-xl shadow-lg p-4 sm:p-5 flex flex-col items-center justify-between 
+                                    transition-all duration-300 hover:bg-[#f8f8f8] hover:scale-105 hover:shadow-xl cursor-pointer overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-br from-[#b74b4b]/0 to-[#9a3a3a]/0 group-hover:from-[#b74b4b]/10 group-hover:to-[#9a3a3a]/10 transition-all duration-500"></div>
+                            <div class="relative z-10 w-full flex flex-col items-center">
+                                <div class="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 bg-[#b74b4b]/10 rounded-full flex items-center justify-center mb-3 sm:mb-4 group-hover:bg-[#b74b4b]/20 transition-all">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" 
+                                         class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 group-hover:scale-110 transition-transform">
+                                </div>
+                                <h4 class="font-bold text-lg sm:text-xl md:text-2xl text-gray-800 group-hover:text-[#b74b4b] transition-colors">JavaScript</h4>
+                                <p class="text-xs sm:text-sm text-gray-600 mt-1">Programming</p>
+                            </div>
+                            <div class="relative z-10 w-full mt-3 sm:mt-4 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                                <div class="w-full bg-gray-200 rounded-full h-1.5">
+                                    <div class="bg-[#b74b4b] h-1.5 rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="boxes">
-                <div class="box">
-                    <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="450">Front End Developer</div>
-                    <!-- <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600">45%</div> -->
-                </div>
-    
-                <div class="box">
-                    <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150">HTML</div>
-                    <!-- <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">90%</div> -->
-                </div>
-                <div class="box">
-                    <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150">CSS</div>
-                    <!-- <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">80%</div> -->
-                </div>
-                <div class="box">
-                    <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="450">JavaScript</div>
-                    <!-- <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600">50%</div> -->
-                </div>
-                <div class="box">
-                    <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="450">Bootstrap</div>
-                    <!-- <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600">45%</div> -->
-                </div>
-    
-                <div class="box">
-                    <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="450">TailWind CSS</div>
-                    <!-- <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600">45%</div> -->
-                </div>
-    
-                <div class="box">
-                    <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="450">React</div>
-                    <!-- <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600">45%</div> -->
-                </div>
-    
-                <div class="box">
-                    <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="450">Java</div>
-                    <!-- <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600">45%</div> -->
-                </div>
-    
-            </div>
-        </div>
         </div>
     </section>
+    
+    <style>
+        /* Animation for infinite scrolling */
+        .animate-infinite-scroll {
+            display: flex;
+            width: max-content;
+            animation: scroll 30s linear infinite;
+        }
+        
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(calc(-50% - 2rem)); }
+        }
+        
+        /* Gradient animation for title */
+        .animate-gradient {
+            animation: gradient 3s ease infinite;
+            background-size: 200% 200%;
+        }
+        
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        /* Width animation for underline */
+        .animate-width {
+            animation: widthGrow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes widthGrow {
+            0% { width: 4rem; opacity: 0.7; }
+            100% { width: 8rem; opacity: 1; }
+        }
+        
+        /* Skill Card Hover Effects */
+        .skill-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 640px) {
+            .animate-infinite-scroll {
+                animation: scroll 20s linear infinite;
+            }
+            
+            .skills-section {
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+            }
+        }
+        
+        /* Pause animation on parent hover */
+        .skills-section:hover .animate-infinite-scroll {
+            animation-play-state: paused;
+        }
+        
+        /* Unique background pattern */
+        .skills-section {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .skills-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.03) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(255, 255, 255, 0.03) 0%, transparent 20%);
+            pointer-events: none;
+        }
+    </style>
 
     
-<footer>
-    <div class="text">
-         <span>Created By
-            <a href="#" Gunaseelan K ></a>| &#169; All Rights Reserved
-         </span>
+<footer class="py-10 px-4 sm:px-6 lg:px-8 bg-[#b74b4b] text-white">
+    <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0">
+                <h2 class="text-2xl font-bold">Gunaseelan K</h2>
+                <p class="mt-2">Full Stack Developer</p>
+            </div>
+            <div class="flex flex-col items-center md:items-end">
+                <div class="flex space-x-6 mb-4">
+                    <a href="https://www.linkedin.com/in/gunaseelan-k-6b512a33b/" class="hover:text-[#f8d7d7] transition-colors duration-300">
+                        <i class="fab fa-linkedin-in text-xl"></i>
+                    </a>
+                    <a href="https://github.com/Gunaseelan16" class="hover:text-[#f8d7d7] transition-colors duration-300">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="https://www.instagram.com/guna____05/?hl=en" class="hover:text-[#f8d7d7] transition-colors duration-300">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                </div>
+                <p class="text-sm">
+                    &copy; <span id="year"></span> Gunaseelan K. All rights reserved.
+                </p>
+            </div>
+        </div>
     </div>
 </footer>
 
